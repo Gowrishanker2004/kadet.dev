@@ -8,7 +8,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Run npm
-        run: npm install
+        run: npm install --force
       - name: Run npm build
         run: npm run build
       - name: Upload to s3
